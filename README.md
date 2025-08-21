@@ -3,7 +3,7 @@
 <img src="https://github.com/TheoDgb/LiveMusicalInstruments/blob/main/media/LiveMusicalInstruments_icon.png?raw=true" alt="LiveMusicalInstruments Icon" style="width: 10%;">
 
 ## About
-Minecraft plugin that lets you play electronic instruments live and broadcast the performance to all players in real time.
+Minecraft plugin that lets you play electronic instruments live and broadcast the performance to players in real time.
 
 **Note**:
 
