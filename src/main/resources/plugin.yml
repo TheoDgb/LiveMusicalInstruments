@@ -1,0 +1,19 @@
+name: LiveMusicalInstruments
+main: com.livemusicalinstruments.LiveMusicalInstruments
+version: 1.0.0
+api-version: 1.21
+author: Asson
+commands:
+  live:
+    description: "Minecraft plugin that lets you play electronic instruments live and broadcast the performance to all players in real time."
+    usage: |
+      First, configure your Minecraft server by properly reading the comments in the config.yml file in the URLCustomDiscs plugin folder.
+      
+      Display the list of commands:
+      /live help
+      
+      Start / Stop playing an electronic instrument live:
+      /live <start|stop> <instrument_name>
+      - drums
+      - synth (NOT IMPLEMENTED)
+      - electric_guitar (NOT IMPLEMENTED)
