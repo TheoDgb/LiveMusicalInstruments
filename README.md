@@ -12,15 +12,16 @@ This plugin is **not intended for most shared Minecraft hosting providers** and 
 The plugin, originally developed for personal use, is now public and configurable for your own equipment (currently only drums are supported) and your own audio kit.  
 Some latency may occur between playing and hearing the audio, due to the transfer of information from your electronic device to the Minecraft server.
 
-Future updates may include support for additional instruments.
-
 Since Minecraft doesn't allow audio streaming, **MIDI is used instead**, combined with an audio kit inside the resource pack (a default kit is already included).
+
+Future updates may include support for additional instruments.
 
 **To work properly, this plugin requires**:
 - A resource pack
 - A script to detect the exact name of your MIDI-connected module
 - A second script to capture and send MIDI data to the plugin (tested on Windows 10)
 - Python to run the scripts
+
 The plugin opens a **Web Socket server** to receive MIDI data from the script. You'll therefore need to configure your router to create a **NAT/PAT FTP Data rule** on port **3000 TCP**.
 
 ## Installation
@@ -31,14 +32,14 @@ The plugin opens a **Web Socket server** to receive MIDI data from the script. Y
     - The public IP of your Minecraft server with `:3000`
     - Your Minecraft username (so the sound propagates from your player in-game)
     - The name of your MIDI device retrieved in step 2
-    > By default, the plugin in configured for an Alesis Crimson II drum kit. You can configure your own device by editing `ǸOTE_MAP` (only modify the numbers, not the names). Other parameters can also be customized if needed.
+    > By default, the plugin is configured for an Alesis Crimson II drum kit. You can configure your own device by editing `ǸOTE_MAP` (only modify the numbers, not the names). Other parameters can also be customized if needed.
 5. Install the `LiveMusicalInstruments.jar` into the `plugins` folder of your Minecraft server and start your server once to generate the config file in `plugins/LiveMusicalInstruments/`.  
 Edit if needed (remember to restart the server after each change).
 6. Download the `LiveMusicalInstrumentsPack.zip` resource pack.  
 For custom kits:
     - In your resource pack, under `assets/minecraft/sounds/drums/`, create your own folder following the same structure and naming convention as `drum_kit_default`.
     - Then, in `assets/minecraft/sounds.json`, add your custom audio files by following the `drum_kit_default` example.
-    - Update your custom kit name in `config.yml`.
+    - Configure your custom kit in `config.yml`.
 7. Run in Minecraft `/live start drums`, then launch `LiveMidiToMinecraft.py`.  
 A message should appear in Minecraft chat confirming that you are connected and ready to play.  
 (All players must have the resource pack installed in order to hear you perform.)
